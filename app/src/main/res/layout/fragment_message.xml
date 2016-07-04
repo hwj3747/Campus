@@ -1,0 +1,16 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/message"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/system_back"
+    android:layout_marginBottom="65dp">
+
+    <com.haiyangroup.library.view.list.XListView
+        android:id="@+id/xlistview"
+        android:divider="@null"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    </com.haiyangroup.library.view.list.XListView>
+
+</RelativeLayout>

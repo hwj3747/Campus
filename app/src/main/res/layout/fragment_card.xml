@@ -1,0 +1,182 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card"
+    android:background="@color/system_back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/card_info"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/folder1"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_card"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/folder1"
+            android:text="我的校园卡信息"
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:textColor="@color/text_color"/>
+
+        <TextView
+            android:id="@+id/balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:background="@drawable/button_style_empty"
+            android:layout_toLeftOf="@+id/arrow1"
+            android:textSize="13sp"
+            android:padding="3dp"
+            android:layout_marginRight="5dp"
+            android:text="卡余额：888.6"/>
+
+        <ImageView
+            android:id="@+id/arrow1"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:scaleType="centerInside"
+            android:layout_marginTop="27dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/icon_arrow2" />
+
+        <TextView
+
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/separator"
+            android:layout_below="@+id/folder1"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/month"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/folder2"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_card"/>
+
+        <TextView
+            android:id="@+id/folder_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/folder2"
+            android:text="最近三个月卡消费信息"
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:textColor="@color/text_color"/>
+
+        <TextView
+            android:id="@+id/purchase_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:background="@drawable/button_style_empty"
+            android:layout_toLeftOf="@+id/arrow2"
+            android:padding="3dp"
+            android:textSize="13sp"
+            android:layout_marginRight="5dp"
+            android:text="消费记录：55"/>
+
+        <ImageView
+            android:id="@+id/arrow2"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:scaleType="centerInside"
+            android:layout_marginTop="27dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/icon_arrow2" />
+
+        <TextView
+
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/separator"
+            android:layout_below="@+id/folder2"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/year"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/folder3"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_card"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/folder3"
+            android:text="最近一年卡充值信息"
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:textColor="@color/text_color"/>
+
+        <TextView
+            android:id="@+id/recharge_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:background="@drawable/button_style_empty"
+            android:layout_toLeftOf="@+id/arrow3"
+            android:padding="3dp"
+            android:textSize="13sp"
+            android:layout_marginRight="5dp"
+            android:text="充值记录：4条"/>
+
+        <ImageView
+            android:id="@+id/arrow3"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:scaleType="centerInside"
+            android:layout_marginTop="27dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/icon_arrow2" />
+
+        <TextView
+
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/separator"
+            android:layout_below="@+id/folder3"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.haiyangroup.scampus">
+<!--环信权限-->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!--打电话，发短信，上网权限-->
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.haiyangroup.scampus.common.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.haiyangroup.scampus.ui.test.TestActivity" />
+        <activity
+            android:name="com.haiyangroup.scampus.ui.login.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.haiyangroup.scampus.ui.setting.SettingActivity" />
+        <activity android:name="com.haiyangroup.scampus.ui.changepassword.ChangePasswordActivity" />
+        <activity android:name="com.haiyangroup.scampus.ui.about.AboutActivity" />
+        <activity android:name="com.haiyangroup.scampus.ui.feedback.FeedbackActivity" />
+        <activity android:name="com.haiyangroup.scampus.ui.news.NewsActivity" />
+        <activity android:name="com.haiyangroup.scampus.ui.notice.NoticeActivity" />
+        <activity android:name="com.haiyangroup.scampus.ui.score.ScoreActivity" />
+        <activity android:name="com.haiyangroup.scampus.ui.approval.ApprovalActivity" />
+        <activity android:name="com.haiyangroup.scampus.ui.attendance.AttendanceActivity" />
+        <activity android:name="com.haiyangroup.scampus.ui.attendanceinfo.AttendanceInfoActivity" />
+        <activity android:name="com.haiyangroup.scampus.ui.calendar.CalendarActivity" />
+        <activity android:name="com.haiyangroup.scampus.ui.scoreresult.ScoreResultActivity" />
+        <activity android:name="com.haiyangroup.scampus.ui.homework.HomeworkActivity" />
+        <activity android:name="com.haiyangroup.scampus.ui.rollcall.RollcallActivity" />
+        <activity android:name="com.haiyangroup.scampus.ui.webview.WebViewActivity" />
+        <activity android:name="com.haiyangroup.scampus.ui.attendance_teacher.AttendanceTeacherActivity" />
+        <activity android:name="com.haiyangroup.scampus.ui.filecabinet.FileCabinetActivity" />
+        <activity android:name="com.haiyangroup.scampus.ui.card.CardActivity" />
+        <activity android:name="com.haiyangroup.scampus.ui.card_consumption.CardConsumptionActivity" />
+        <activity android:name="com.haiyangroup.scampus.ui.card_info.CardInfoActivity" />
+        <activity android:name="com.haiyangroup.scampus.ui.attendance_teacher_info.AttendanceTeacherInfoActivity" />
+        <activity android:name="com.haiyangroup.scampus.ui.agenda_list.AgendaListActivity" />
+        <activity android:name="com.haiyangroup.scampus.ui.agenda_add.AgendaAddActivity" />
+        <activity android:name="com.haiyangroup.scampus.ui.main.MainActivity"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity android:name="com.haiyangroup.scampus.ui.chat.ChatActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            />
+        <activity
+            android:name="com.easemob.easeui.ui.EaseShowBigImageActivity"
+            android:screenOrientation="portrait"
+            />
+        <!-- 设置环信应用的appkey -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="junyan#inteligencecampus" />
+        <!-- 声明sdk所需的service -->
+        <service
+            android:name="com.easemob.chat.EMChatService"
+            android:exported="true" />
+        <!-- 声明sdk所需的receiver -->
+        <receiver android:name="com.easemob.chat.EMMonitorReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <!-- 可选filter -->
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

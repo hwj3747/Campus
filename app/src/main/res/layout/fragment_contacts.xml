@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contacts"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="65dp"
+    android:background="@color/system_back">
+
+    <RelativeLayout
+        android:id="@+id/search"
+        android:layout_width="fill_parent"
+        android:layout_height="27dp"
+        android:layout_marginBottom="13dp"
+        android:layout_marginTop="13dp">
+        <EditText
+            android:id="@+id/search_text"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/text_color"
+            android:hint="搜索"
+            android:background="@color/white"/>
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:src="@drawable/ico_qutlined"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="6dp" />
+    </RelativeLayout>
+
+    <ExpandableListView
+        android:id="@+id/expand_listView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/search"
+        android:groupIndicator="@null"
+        android:divider="@null"
+        android:background="@color/white"
+        android:visibility="visible">
+    </ExpandableListView>
+
+    <ListView
+        android:id="@+id/result_list"
+        android:layout_below="@+id/search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:visibility="gone">
+    </ListView>
+</RelativeLayout>

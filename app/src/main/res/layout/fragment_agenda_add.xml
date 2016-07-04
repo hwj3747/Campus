@@ -1,0 +1,219 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/agenda_add"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/system_back"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="18dp"
+                android:text="内容"
+                android:textColor="@color/color_primary_green"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/content"
+                android:gravity="start"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:textColor="@color/text_color"
+                android:layout_width="fill_parent"
+                android:layout_height="160dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/button_style_empty" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/separator" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="18dp"
+                android:text="开始时间"
+                android:textColor="@color/color_primary_green"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="18dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="18dp"
+                android:text="2016-01-19 08:00"
+                android:textColor="@color/hint_color"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/separator" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="18dp"
+                android:text="结束时间"
+                android:textColor="@color/color_primary_green"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/over_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="18dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="18dp"
+                android:text="2016-01-19 09:00"
+                android:textColor="@color/hint_color"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/separator" />
+
+        <RelativeLayout
+            android:id="@+id/remind_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="18dp"
+                android:text="提醒方式"
+                android:textColor="@color/color_primary_green"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="16dp"
+                android:layout_toLeftOf="@+id/remind"
+                android:src="@drawable/clock" />
+
+            <ImageView
+                android:id="@+id/arrow"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="14dp"
+                android:src="@drawable/icon_arrow2" />
+
+            <TextView
+                android:id="@+id/remind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="18dp"
+                android:layout_toLeftOf="@+id/arrow"
+                android:text="不提醒"
+                android:textColor="@color/hint_color"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/separator" />
+
+        <RelativeLayout
+            android:id="@+id/repeat_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="18dp"
+                android:text="重复"
+                android:textColor="@color/color_primary_green"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/arrow1"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="14dp"
+                android:src="@drawable/icon_arrow2" />
+
+            <TextView
+                android:id="@+id/repeat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="18dp"
+                android:layout_toLeftOf="@+id/arrow1"
+                android:text="重复"
+                android:textColor="@color/hint_color"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/separator" />
+
+        <Button
+            android:id="@+id/commit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/button_style"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="完成" />
+    </LinearLayout>
+</ScrollView>

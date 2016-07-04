@@ -1,0 +1,19 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/homework_set"
+    android:background="@color/system_back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/feedback_text"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:background="@color/white"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="请在此输入布置的作业。"
+        android:textColorHint="@color/hint_color"
+        android:textColor="@color/text_color"
+        android:gravity="top"/>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"  >
+    <item android:state_checked="true" android:color="@color/color_primary_green" /> <!-- focused -->
+    <item android:state_pressed="true" android:color="@color/color_primary_green" /> <!-- pressed -->
+    <item android:state_selected="true" android:color="@color/color_primary_green" /> <!-- pressed -->
+    <item android:color="@color/black" /> <!-- default -->  //没有pressed时button的颜色
+</selector>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<selector xmlns:android="http://schemas.android.com/apk/res/android" >-->
+    <!--<item android:state_checked="true" android:drawable="@color/color_primary_green" ></item>-->
+    <!--<item android:state_checked="false" android:drawable="@color/black"></item>-->
+    <!--</selector>-->

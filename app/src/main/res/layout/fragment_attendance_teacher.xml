@@ -1,0 +1,337 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/attendance_teacher"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/system_back"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/topPanel"
+        android:layout_width="fill_parent"
+        android:layout_height="165dp"
+        android:background="@drawable/bg_own">
+
+        <com.haiyangroup.scampus.util.CircleImageView
+            android:id="@+id/head_image"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/photo_call_girl" />
+
+        <LinearLayout
+            android:id="@+id/name_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="55dp"
+            android:layout_toRightOf="@+id/head_image"
+            android:background="@drawable/icon_own"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="朱洁洁"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="女"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/info_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_layout"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/head_image"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户类型："
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="老师"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:text="部门："
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/department"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="机电科"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="146dp"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:id="@+id/normal_course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/separator" />
+
+            <ImageView
+                android:id="@+id/normal"
+                android:layout_width="23dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/icon_normal" />
+
+            <TextView
+                android:id="@+id/normal_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="17dp"
+                android:layout_toRightOf="@+id/normal"
+                android:text="82"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="40dp"
+                android:layout_toRightOf="@+id/normal"
+                android:text="课程正常"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/late_course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/separator_horizontal">
+
+            <ImageView
+                android:id="@+id/late"
+                android:layout_width="23dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/icon_late" />
+
+            <TextView
+                android:id="@+id/late_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="17dp"
+                android:layout_toRightOf="@+id/late"
+                android:text="0"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="40dp"
+                android:layout_toRightOf="@+id/late"
+                android:text="课程迟到"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/registration_course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/separator_vertical">
+
+            <ImageView
+                android:id="@+id/registration"
+                android:layout_width="23dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/icon_board" />
+
+            <TextView
+                android:id="@+id/registration_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="17dp"
+                android:layout_toRightOf="@+id/registration"
+                android:text="16"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="40dp"
+                android:layout_toRightOf="@+id/registration"
+                android:text="课程补登"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/absent_course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/separator_vertical"
+            android:layout_toRightOf="@+id/separator_horizontal">
+
+            <ImageView
+                android:id="@+id/absent"
+                android:layout_width="23dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/icon_absence_from_duty" />
+
+            <TextView
+                android:id="@+id/absent_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="17dp"
+                android:layout_toRightOf="@+id/absent"
+                android:text="10"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="40dp"
+                android:layout_toRightOf="@+id/absent"
+                android:text="课程缺勤"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/separator_horizontal"
+            android:layout_width="1dp"
+            android:layout_height="146dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/separator" />
+
+        <TextView
+            android:id="@+id/separator_vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:background="@color/separator" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/separator" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp">
+
+
+        <TextView
+            android:id="@+id/one_week"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/textview_left_bg"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="最近一周"
+            android:textColor="@color/text_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/four_week"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/textview_right_bg"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="最近四周"
+            android:textColor="@color/text_color"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/week_range_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_style"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingRight="20dp"
+            android:text="按周查询:"
+            android:textColor="@color/text_color" />
+
+        <TextView
+            android:id="@+id/week_range"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:paddingLeft="20dp"
+            android:text="第1周-第14周"
+            android:textColor="@color/text_color" />
+    </LinearLayout>
+</LinearLayout>

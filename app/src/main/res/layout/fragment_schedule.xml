@@ -1,0 +1,240 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/schedule"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="65dp">
+        <TextView
+            android:id="@+id/test_empty"
+            style="@style/courseTableText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/course_week_text_view_bg"
+            android:text="@string/empty" />
+
+        <com.haiyangroup.scampus.ui.schedule.MyHorizontalScrollView
+            android:layout_toRightOf="@id/test_empty"
+            android:id="@+id/week_scrollview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <RelativeLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/test_monday_course"
+                    style="@style/courseTableText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/course_week_text_view_bg"
+                    android:text="周一\n12-25" />
+
+
+                <TextView
+                    android:id="@+id/test_tuesday_course"
+                    style="@style/courseTableText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/test_monday_course"
+                    android:background="@drawable/course_week_text_view_bg"
+                    android:text="周二" />
+
+
+                <TextView
+                    android:id="@+id/test_wednesday_course"
+                    style="@style/courseTableText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/test_tuesday_course"
+                    android:background="@drawable/course_week_text_view_bg"
+                    android:text="周三" />
+
+
+                <TextView
+                    android:id="@+id/test_thursday_course"
+                    style="@style/courseTableText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/test_wednesday_course"
+                    android:background="@drawable/course_week_text_view_bg"
+                    android:text="周四" />
+
+                <TextView
+                    android:id="@+id/test_friday_course"
+                    style="@style/courseTableText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/test_thursday_course"
+                    android:background="@drawable/course_week_text_view_bg"
+                    android:text="周五" />
+
+                <TextView
+                    android:id="@+id/test_saturday_course"
+                    style="@style/courseTableText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/test_friday_course"
+                    android:background="@drawable/course_week_text_view_bg"
+                    android:text="周六" />
+
+
+                <TextView
+                    android:id="@+id/test_sunday_course"
+                    style="@style/courseTableText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/test_saturday_course"
+                    android:background="@drawable/course_week_text_view_bg"
+                    android:text="周日" />
+            </RelativeLayout>
+        </com.haiyangroup.scampus.ui.schedule.MyHorizontalScrollView>
+
+        <com.haiyangroup.scampus.ui.schedule.MyScrollView
+            android:layout_below="@id/test_empty"
+            android:id="@+id/section_scrollview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <RelativeLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/section1"
+                    style="@style/courseTableText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/course_text_view_bg"
+                    android:text="1" />
+
+
+                <TextView
+                    android:id="@+id/section2"
+                    style="@style/courseTableText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/section1"
+                    android:background="@drawable/course_text_view_bg"
+                    android:text="2" />
+
+
+                <TextView
+                    android:id="@+id/section3"
+                    style="@style/courseTableText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/section2"
+                    android:background="@drawable/course_text_view_bg"
+                    android:text="3" />
+
+
+                <TextView
+                    android:id="@+id/section4"
+                    style="@style/courseTableText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/section3"
+                    android:background="@drawable/course_text_view_bg"
+                    android:text="4" />
+
+                <TextView
+                    android:id="@+id/section5"
+                    style="@style/courseTableText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/section4"
+                    android:background="@drawable/course_text_view_bg"
+                    android:text="5" />
+
+                <TextView
+                    android:id="@+id/section6"
+                    style="@style/courseTableText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/section5"
+                    android:background="@drawable/course_text_view_bg"
+                    android:text="6" />
+
+
+                <TextView
+                    android:id="@+id/section7"
+                    style="@style/courseTableText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/section6"
+                    android:background="@drawable/course_text_view_bg"
+                    android:text="7" />
+
+                <TextView
+                    android:id="@+id/section8"
+                    style="@style/courseTableText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/section7"
+                    android:background="@drawable/course_text_view_bg"
+                    android:text="8" />
+
+                <TextView
+                    android:id="@+id/section9"
+                    style="@style/courseTableText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/section8"
+                    android:background="@drawable/course_text_view_bg"
+                    android:text="9" />
+
+                <TextView
+                    android:id="@+id/section10"
+                    style="@style/courseTableText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/section9"
+                    android:background="@drawable/course_text_view_bg"
+                    android:text="10" />
+
+                <TextView
+                    android:id="@+id/section11"
+                    style="@style/courseTableText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/section10"
+                    android:background="@drawable/course_text_view_bg"
+                    android:text="11" />
+
+                <TextView
+                    android:id="@+id/section12"
+                    style="@style/courseTableText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/section11"
+                    android:background="@drawable/course_text_view_bg"
+                    android:text="12" />
+
+            </RelativeLayout>
+        </com.haiyangroup.scampus.ui.schedule.MyScrollView>
+
+        <com.haiyangroup.scampus.ui.schedule.MyScrollView
+            android:id="@+id/scroll_body"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/test_empty"
+            android:layout_toRightOf="@+id/section_scrollview"
+            android:scrollbars="none">
+
+            <com.haiyangroup.scampus.ui.schedule.MyHorizontalScrollView
+                android:id="@+id/course_scrollview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/test_course_rl"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"></RelativeLayout>
+            </com.haiyangroup.scampus.ui.schedule.MyHorizontalScrollView>
+        </com.haiyangroup.scampus.ui.schedule.MyScrollView>
+</RelativeLayout>

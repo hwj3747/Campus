@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Campus</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="setting">设置</string>
+    <string name="submit">提交</string>
+    <string name="save">保存</string>
+    <string name="loss">挂失</string>
+    <string name="title_activity_about">AboutActivity</string>
+
+    <string name="campus_info">厦门技师学院地处厦门市翔安文教区,占地615亩，为厦门市唯一一所国家重点公办技工院校。学院设有理事会，目前由中共厦门市委常委、宣传部部长叶重耕任理事长，理事会成员由厦门市发改委、财政局、经发局、人力资源和社会保障局、翔安区政府、国立华侨大学等部门及厦门各行业重点企业领导组成。自1979年建校以来，在省人社厅、厦门市委、市政府、市人社局的领导下，已发展成为集职业技术教育、技工技师培训、职业资格鉴定、出国劳务培训为一体、福建省内一流且在全国有较大影响的全日制综合性院校。</string>
+
+    <string name="app_info">掌上校园主要提供给老师使用，用于管理自己的课表，以及学生的考试，考勤，测验和上传教学相关的课件资源，同事也可以和同事，学生，家长进行有效的沟通和交流，是一个非常有效的工具。</string>
+    <string name="title_activity_news_detail">NewsDetailActivity</string>
+
+    <string name="check"><u>审批</u></string>
+</resources>

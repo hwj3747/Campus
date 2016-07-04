@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/score_result"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="姓名"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:padding="8dp"
+                android:background="@color/color_primary_green"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="@color/separator"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="学号"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:padding="8dp"
+                android:background="@color/color_primary_green"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="@color/separator"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="成绩"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:padding="8dp"
+                android:background="@color/color_primary_green"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"></ListView>
+    </LinearLayout>
+</RelativeLayout>

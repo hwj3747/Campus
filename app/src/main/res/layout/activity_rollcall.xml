@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"></FrameLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/home_back"/>
+
+        <RadioGroup
+            android:id="@+id/main_tab_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="13dp"
+            android:paddingBottom="7dp"
+            android:drawableTop="@color/white"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:id="@+id/menu1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="点名"
+                android:textColor="@drawable/color_radiobutton"
+                android:checked="true"
+                android:gravity="center"
+                android:drawableTop="@drawable/menu_rollcall_selector"
+                android:button="@null"
+
+                />
+
+
+            <RadioButton
+                android:id="@+id/menu2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@drawable/color_radiobutton"
+                android:text="作业布置"
+                android:gravity="center"
+                android:drawableTop="@drawable/menu_homework_selector"
+                android:button="@null" />
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+</RelativeLayout>
